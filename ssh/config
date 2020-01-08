@@ -1,0 +1,259 @@
+Host * 
+   AddKeysToAgent yes
+#UseKeychain yes
+   IdentityFile ~/.ssh/id_rsa
+  #XauthLocation /opt/X11/bin/xauth
+
+host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/github_rsa
+ User git
+ IdentitiesOnly yes
+
+Host 192.168.1.23
+  User root
+  ForwardX11 yes
+	ForwardAgent yes
+ 	ForwardX11Trusted yes
+  ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.25
+        User admin
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.26
+        User admin
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.27
+        User root
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.28
+        User root
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.50
+	User wifi
+	ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+	ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.100.100
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.51
+        User wifi
+	ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.52
+        User wifi
+	ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.53
+        User wifi
+	ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.54
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.0.86
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 172.16.30.65
+        User rafael
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.220
+        User root
+        Port 2222
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.221
+        User o2cmf
+        Port 22
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.222
+        User root
+        Port 2222
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.227
+        User root
+	Port 2222
+	ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.60.0.3
+        User stack
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+
+
+Host 10.61.1.33
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+
+Host 10.61.100.51
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.100.52
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.100.53
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.100.54
+        User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+# Controller EXP2.2
+Host 10.61.1.28
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+
+Host 10.61.1.24
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+# RabbitMQ EXP2.2
+Host 10.61.1.11
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.1.14
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.1.15
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.1.20
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.61.1.19
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+# SW BACKHAUL
+Host 10.61.100.240
+        User ubuntu
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 10.60.0.1
+        User stack
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 172.16.30.105
+        User pablo
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p 
+
+Host 172.16.30.84
+        User victor
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+
+Host 172.16.30.94
+	User wifi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+
+Host 192.168.0.88
+        User pi
+        ForwardX11 yes
+        ForwardAgent yes
+        ForwardX11Trusted yes
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
+Host 192.168.1.223
+    User pi
+    ServerAliveInterval 360
+    ServerAliveCountMax 5
+    ForwardX11 yes
+    ForwardAgent yes
+    ForwardX11Trusted yes
+    ProxyCommand  ssh bridgekeeper@baleia.ufes.br -oPort=48500 -W %h:%p
+
+Host 10.61.100.80
+    User cloud
+    ServerAliveInterval 360
+    ServerAliveCountMax 5
+    ForwardX11 yes
+    ForwardAgent yes
+    ForwardX11Trusted yes
+    ProxyCommand ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
