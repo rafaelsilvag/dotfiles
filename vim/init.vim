@@ -38,7 +38,7 @@ call plug#begin(g:plugged_home)
 
   " Terminal Vim with 256 colors colorscheme
   Plug 'fisadev/fisa-vim-colorscheme'
- 
+
   " Async autocompletion
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   " Completion from other opened files
@@ -48,7 +48,7 @@ call plug#begin(g:plugged_home)
   " Just to add the python go-to-definition and similar features, autocompletion
   " from this plugin is disabled
   Plug 'davidhalter/jedi-vim'
- 
+
   " Automatically close parenthesis, etc
   Plug 'Townk/vim-autoclose'
 
@@ -62,19 +62,19 @@ call plug#begin(g:plugged_home)
   Plug 'jeetsukumaran/vim-indentwise'
 
   " Better language packs
-  Plug 'sheerun/vim-polyglot' 
+  Plug 'sheerun/vim-polyglot'
   Plug 'slashmili/alchemist.vim'
   Plug 'python-mode/python-mode', { 'branch': 'develop' }
- 
+
   " syntax check
   Plug 'w0rp/ale'
-  
+
   " Paint css colors with the real color
   Plug 'lilydjwg/colorizer'
-  
+
   " Window chooser
   Plug 't9md/vim-choosewin'
-  
+
   " Generate html in a simple way
   Plug 'mattn/emmet-vim'
 
@@ -101,7 +101,7 @@ call plug#begin(g:plugged_home)
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " Nice icons
-  " Plug 'ryanoasis/vim-devicons' 
+  " Plug 'ryanoasis/vim-devicons'
   " Git: {{{
   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   Plug 'tpope/vim-fugitive'                 | " git frontend for vim
@@ -234,7 +234,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
 

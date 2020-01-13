@@ -1,4 +1,4 @@
-Host * 
+Host *
    AddKeysToAgent yes
 #UseKeychain yes
    IdentityFile ~/.ssh/id_rsa
@@ -218,7 +218,7 @@ Host 172.16.30.105
         ForwardX11 yes
         ForwardAgent yes
         ForwardX11Trusted yes
-        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p 
+        ProxyCommand  ssh root@nerds.lprm.inf.ufes.br -oPort=2222 -W %h:%p
 
 Host 172.16.30.84
         User victor
