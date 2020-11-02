@@ -107,6 +107,12 @@ call plug#begin(g:plugged_home)
   Plug 'tpope/vim-fugitive'                 | " git frontend for vim
   Plug 'airblade/vim-gitgutter'             | " displays change markers on lines
   Plug 'jreybert/vimagit'                   | " another git porcelain (experimental) {{{
+  Plug 'dex/p4.vim'
+  Plug 'rightson/vim-p4-syntax'
+  Plug 'tmux-plugins/vim-tmux-focus-events'
+  Plug 'tomtom/tcomment_vim'                | " tcomment provides easy to use, file-type sensible comments for Vim
+  " Floaterm plugin
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
 filetype plugin indent on
 
@@ -237,6 +243,8 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
+" to create a hook for NERDTree
+map <F5> :NERDTreeToggle<CR>
 
 let g:formatters_python = ['black', 'autopep8']
 let g:autoformat_verbosemode=1
@@ -370,3 +378,14 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+set clipboard+=unnamedplus
+
+" it displays a tab line at the top containing the name of all open tabs
+let g:airline#extensions#tabline#enabled = 1
+
+" toogle floaterm using F12
+let g:floaterm_keymap_toggle = '<F12>'
+" to set the terminal size
+let g:floaterm_width = 0.9
+let g:floaterm_height = 0.9
