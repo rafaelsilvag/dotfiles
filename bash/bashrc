@@ -121,9 +121,15 @@ export ZZPATH="/home/rafael/Apps/funcoeszz/funcoeszz"  # script
 export ZZDIR="/home/rafael/Apps/funcoeszz/zz"    # pasta zz/
 source "$ZZPATH"
 
-export PATH=$PATH:~/.emacs.d/bin
-alias ls='colorls'
+export PATH=$PATH:~/.local/bin
+#~/.emacs.d/bin
+alias ls='colorls --sd'
+alias ll='colorls --sd -l'
+# alias ls='exa'
+# alias ll='exa -la'
+alias vim='nvim'
+alias vim='nvim'
+alias ..='cd ../'
 alias ssh-copy-id='ssh-copy-id -i ~/.ssh/id_rsa.pub'
-eval "$(register-python-argcomplete pipx)"
 
 export QT_QPA_PLATFORMTHEME="gtk2"
